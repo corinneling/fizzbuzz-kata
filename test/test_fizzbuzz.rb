@@ -17,4 +17,9 @@ class TestFizzBuzz < Minitest::Test
     assert true, @fzbz.start
   end
 
+  def test_if_start_prints_out_numbers_1_to_100
+    i = (1..100)
+    assert_equal i, @fzbz.start
+  end
+
 end
