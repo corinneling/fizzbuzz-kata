@@ -1,4 +1,4 @@
-require 'rake/test'
+require 'rake/testtask'
 
 task :default => :test
 
@@ -8,4 +8,4 @@ end
 
 task :start do
   ruby 'fizzbuzz/start.rb'
-end 
+end
