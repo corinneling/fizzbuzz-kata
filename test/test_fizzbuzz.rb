@@ -1,9 +1,12 @@
+require 'simplecov'
+SimpleCov.start
+
 require 'minitest/autorun'
 require 'minitest/pride'
 
 require './fizzbuzz/start'
 
-class TestFizzBuzz < Minitest::Test
+class TestFizzBuzz < MiniTest::Test
 
   def setup
     @fzbz = FizzBuzz.new
