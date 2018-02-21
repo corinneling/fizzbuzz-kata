@@ -22,4 +22,16 @@ class TestFizzBuzz < Minitest::Test
     assert_equal i, @fzbz.start
   end
 
+  def test_if_fizz_is_printed_when_i_is_divisible_by_3
+    assert_output(/Fizz/) { @fzbz.start.count 9 }
+  end
+
+  def test_if_buzz_is_printed_when_i_is_divisible_by_5
+    assert_output(/Buzz/) { @fzbz.start.count 25 }
+  end
+
+  def test_if_fizzbuzz_is_printed_when_i_is_divisible_by_3_and_5
+    assert_output(/FizzBuzz/) { @fzbz.start.count 15 }
+  end
+
 end
